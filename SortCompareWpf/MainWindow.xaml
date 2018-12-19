@@ -1,0 +1,17 @@
+﻿<Window x:Class="SortCompareWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SortCompareWpf"
+        mc:Ignorable="d"
+        Title="Сравнение сортировок" Height="450" Width="570" ResizeMode="CanMinimize">
+  <Grid>
+    <Label Content="Количество элементов" HorizontalAlignment="Left" Margin="43,23,0,0" VerticalAlignment="Top"/>
+    <TextBox x:Name="NumElementsTextBox" HorizontalAlignment="Left" Height="20" Margin="203,27,0,0" TextWrapping="Wrap" Text="10000" VerticalAlignment="Top" Width="120" TextChanged="NumElementsTextBox_TextChanged" />
+    <Button x:Name="CreateArrayButton" Content="Создать массив" HorizontalAlignment="Left" Margin="359,26,0,0" VerticalAlignment="Top" Width="162" Click="CreateArrayButton_Click"/>
+    <TextBox x:Name="LogTextBox" HorizontalAlignment="Left" Height="260" Margin="43,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="478" />
+    <Button x:Name="BubbleSortButton" Content="Пузырьковая сортировка" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" Width="225" Click="BubbleSortButton_Click" IsEnabled="False"/>
+    <Button x:Name="QsortButton" Content="QSort" HorizontalAlignment="Left" Margin="296,76,0,0" VerticalAlignment="Top" Width="225" Click="QsortButton_Click" IsEnabled="False" />
+  </Grid>
+</Window>
